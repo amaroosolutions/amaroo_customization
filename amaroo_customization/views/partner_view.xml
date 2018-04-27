@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+       
+        <!-- Partners Extension -->
+
+        <record id="view_partner_property_form_inherit" model="ir.ui.view">
+            <field name="name">res.partner.property.form.inherit1</field>
+            <field name="model">res.partner</field>
+            <field name="priority">2</field>
+            <field name="inherit_id" ref="account.view_partner_property_form"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//page[@name='accounting']/group/group[@name='acc_purchase']/field[@name='property_supplier_payment_term_id']" position="after">
+                	<field name="default_expense_account_id"/>
+                	<field name="default_expense_taxes_id" widget="many2many_tags"/>
+                </xpath>
+                <xpath expr="//page[@name='accounting_disabled']" position="inside">
+                	<group>
+                        <group>
+		                	<field name="default_expense_account_id"/>
+		                	<field name="default_expense_taxes_id" widget="many2many_tags"/>
+		                </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+        
+    </data>
+</odoo>

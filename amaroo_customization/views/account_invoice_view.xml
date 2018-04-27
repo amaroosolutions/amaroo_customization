@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Supplier invoices -->
+    
+    <record model="ir.ui.view" id="invoice_supplier_form_inherit">
+        <field name="name">account.invoice.supplier.form.inherit</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_line_ids']" position="attributes">
+                    <attribute name="context">{'type': type, 'journal_id': journal_id, 'vendor': partner_id}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
