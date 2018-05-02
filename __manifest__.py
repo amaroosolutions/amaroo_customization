@@ -2,8 +2,8 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name' : 'Amaroo Customization',
-    'version' : '1.1',
+    'name' : 'Amaroo Customization12345',
+    'version' : '2.2',
     'summary': 'Get default account and tax from vendor',
     'sequence': 30,
     'description': """
