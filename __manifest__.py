@@ -3,14 +3,14 @@
 
 {
     'name' : 'Amaroo Customization12345',
-    'version' : '2.2',
+    'version' : '2.3',
     'summary': 'Get default account and tax from vendor',
     'sequence': 30,
     'description': """
 Get default expense account and tax from vendor in invoice line
     """,
     'category': 'Custom',
-    'website': 'https://www.broadtech-innovations.com',
+    'website': 'https://www.broadtech-what.com',
     'images' : [],
     'depends' : ['account', 'purchase'],
     'data': [
