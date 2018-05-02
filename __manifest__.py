@@ -3,7 +3,7 @@
 
 {
     'name' : 'Amaroo Customization',
-    'version' : '1.0',
+    'version' : '1.1',
     'summary': 'Get default account and tax from vendor',
     'sequence': 30,
     'description': """
